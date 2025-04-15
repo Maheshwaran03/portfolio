@@ -9,9 +9,6 @@ const About = () => {
     'HTML5',
     'CSS3',
     'Tailwind CSS',
-    'Git',
-    'Responsive Design',
-    'UI/UX Design',
   ];
 
   const navigate = useNavigate();
