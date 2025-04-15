@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   html {
@@ -36,4 +38,3 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-blue-600;
 }
-@import "tailwindcss";
