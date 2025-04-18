@@ -14,7 +14,7 @@
 
 @layer components {
   .section-title {
-    @apply text-3xl sm:text-4xl font-bold mb-4;
+    @apply text-3xl sm:text-3xl font-bold mb-4;
   }
 
   .section-divider {

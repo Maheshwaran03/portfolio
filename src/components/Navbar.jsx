@@ -9,14 +9,15 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
+    { name:'Internship',path:'/internship'},
     { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Contact', path: '/contact' }
   ];
 
   return (
     <nav className="fixed w-full bg-white/10 backdrop-blur-md z-50">
       <div className="max-w-9xl mx-auto px- sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-`5">
         <div className="flex items-center space-x-4">
         <motion.img
           src="/Photo.jpg"

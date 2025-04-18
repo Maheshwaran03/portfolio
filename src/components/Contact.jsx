@@ -32,39 +32,39 @@ ${formData.message}`;
   };
 
   return (
-    <section id="contact" className="py-40 bg-gray-900 text-white">
+    <section id="contact" className="py-20 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6">Contact</h2>
-          <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-3">Contact</h2>
+          <div className="w-20 h-1 bg-blue-500 mx-auto"></div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-8">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-4xl font-semibold mb-4">Let's Connect</h3>
-            <p className="text-2xl text-gray-300 mb-8">
+            <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Let's Connect</h3>
+            <p className="text-base sm:text-lg text-gray-300 mb-6">
               I'm always open to discussing new projects, creative ideas, or
               opportunities to be part of your visions.
             </p>
-            <div className="space-y-4">
+            <div className="space-y-3">
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=maheshsathish001@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-xl text-gray-300 hover:text-blue-400 transition-colors"
+                className="flex items-center text-base sm:text-lg text-gray-300 hover:text-blue-400 transition-colors"
               >
-                <FaEnvelope className="mr-3 text-2xl" />  
+                <FaEnvelope className="mr-3 text-xl" />  
                 maheshsathish001@gmail.com
               </a>
               <div className="flex space-x-4">
@@ -74,7 +74,7 @@ ${formData.message}`;
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-blue-400 transition-colors"
                 >
-                  <FaGithub size={24} />
+                  <FaGithub size={20} />
                 </a>
                 <a
                   href="https://linkedin.com/in/maheshwaran-s-b6b514225"
@@ -82,7 +82,7 @@ ${formData.message}`;
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-blue-400 transition-colors"
                 >
-                  <FaLinkedin size={24} />
+                  <FaLinkedin size={20} />
                 </a>
               </div>
             </div>
@@ -94,9 +94,9 @@ ${formData.message}`;
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-2xl font-medium mb-2">
+                <label htmlFor="name" className="block text-base sm:text-lg font-medium mb-2">
                   Name
                 </label>
                 <input
@@ -110,7 +110,7 @@ ${formData.message}`;
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-2xl font-medium mb-2">
+                <label htmlFor="email" className="block text-base sm:text-lg font-medium mb-2">
                   Email
                 </label>
                 <input
@@ -124,7 +124,7 @@ ${formData.message}`;
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-2xl font-medium mb-2">
+                <label htmlFor="message" className="block text-base sm:text-lg font-medium mb-2">
                   Message
                 </label>
                 <textarea
@@ -139,7 +139,7 @@ ${formData.message}`;
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-500 text-2xl hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-md transition-colors"
+                className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-md transition-colors text-base sm:text-lg"
               >
                 Send Message
               </button>
