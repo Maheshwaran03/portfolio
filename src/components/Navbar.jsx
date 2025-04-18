@@ -1,37 +1,42 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom'; // ← import useLocation
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation(); // ← get the current route
 
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name:'Internship',path:'/internship'},
+    { name:'Internship', path:'/internship' },
     { name: 'Projects', path: '/projects' },
     { name: 'Contact', path: '/contact' }
   ];
 
   return (
     <nav className="fixed w-full bg-white/10 backdrop-blur-md z-50">
-      <div className="max-w-9xl mx-auto px- sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-`5">
-        <div className="flex items-center space-x-4">
-        <motion.img
-          src="/Photo.jpg"
-          alt="Maheshwaran"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="w-14 h-14 sm:w-16 sm:h-16 md:w-16 md:h-16 rounded-full object-cover"
-        />
-        <Link to="/" className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white tracking-wide">
-          Maheshwaran S
-        </Link>
-        </div>
-
+      <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+        
+          {/*  Conditionally hide logo + name on Home */}
+          {location.pathname !== '/' && (
+            <div className="flex items-center space-x-4">
+              <motion.img
+                src="/Photo.jpg"
+                alt="Maheshwaran"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="w-14 h-14 sm:w-16 sm:h-16 md:w-16 md:h-16 rounded-full object-cover"
+              />
+              <Link to="/" className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white tracking-wide">
+                Maheshwaran S
+              </Link>
+            </div>
+          )}
+          {/*Conditionally hide logo + name on Home up to this */}
             
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -42,6 +47,7 @@ const Navbar = () => {
          
           
           </motion.div>
+        
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
