@@ -3,25 +3,27 @@ import { motion } from 'framer-motion';
 const Internship = () => {
   const internships = [
     {
-      title: "Frontend Developer Intern",
-      company: "Tech Solutions Inc.",
-      duration: "June 2023 - August 2023",
+      title: "Software Engineer Intern",
+      company: "P&D Dept. of TN Govt.",
+      duration: "May 2024 - Aug 2024",
       description: [
-        "Developed responsive web applications using React.js and Tailwind CSS",
-        "Implemented RESTful API integrations and state management",
-        "Collaborated with UX designers to implement modern UI components",
-        "Participated in code reviews and agile development processes"
-      ]
+          "Built and managed an interactive SDG Dashboard using Streamlit, Plotly, and Pandas",
+          "Processed and visualized data to clearly display SDG indicators and trends",
+          "Generated automated reports in PDF, DOCX, and PPT formats",
+          "Ensured the dashboard ran smoothly and efficiently for end users"
+
+            ]
     },
     {
       title: "Web Development Intern",
-      company: "Digital Innovations",
-      duration: "January 2023 - March 2023",
+      company: "Leaflix E business private limited",
+      duration: "Jan 2025 - Mar 2025",
       description: [
-        "Created and maintained company websites using modern web technologies",
-        "Optimized website performance and implemented SEO best practices",
-        "Worked with cross-functional teams to deliver client projects",
-        "Developed custom WordPress themes and plugins"
+        "Worked as the frontend developer for an e-commerce clothing website",
+        "Built responsive user interfaces using React.js and Tailwind CSS",
+        "Implemented product displays and dynamic UI components",
+        "Managed cart interactions and user navigation",
+        "Ensured smooth integration with the backend for real-time functionality"
       ]
     }
   ];
